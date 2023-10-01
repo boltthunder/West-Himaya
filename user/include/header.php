@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../dist/custom.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
 

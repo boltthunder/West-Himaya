@@ -83,6 +83,10 @@ a {
     width: 400px;
 }
 
+.data {
+    display: none;
+}
+
 
 /* this code for mobile responsive */
 

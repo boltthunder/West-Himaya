@@ -1819,6 +1819,12 @@ input:checked + .toggle-bg {
   --tw-ring-color: rgb(31 41 55 / 0.7) !important;
 }
 
+@media (min-width: 640px) {
+  .sm\:flex {
+    display: flex !important;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:h-96 {
     height: 24rem !important;

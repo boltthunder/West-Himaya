@@ -99,7 +99,7 @@ include 'include/header.php'
                                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                     alt="...">
                             </div>
-                           
+
                         </div>
                         <!-- Slider indicators -->
                         <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
@@ -164,18 +164,63 @@ include 'include/header.php'
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Create Post</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                ...
+                <div class="form-group sm:flex gap-4">
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="text" id="price" class="form-control" placeholder="Php 100.00">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <select id="description" class="form-control text-center">
+                            <option disabled selected>-----Please Select-----</option>
+                            <option value="rent">For Rent</option>
+                            <option value="">For Barter</option>
+                            <option value="">For Trade</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="rent" class="data">
+                    <div class="flex justify-center mt-3">
+                        <div class="form-group">
+                            <label for="">Available Date</label>
+                        </div>
+                    </div>
+                    <div class="form-group flex justify-center gap-3 mt-2">
+                        <div class="form-group">
+                            <label for="">From Date</label>
+                            <input type="date" id="" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">To Date</label>
+                            <input type="date" id="" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="file" class="form-control">
+                </div>
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Understood</button>
+                <button type="button" class="btn btn-primary">Post</button>
             </div>
         </div>
     </div>
 </div>
 
+<script>
+    $(document).ready(function () {
+        $("#description").on('change', function () {
+            // alert($(this).val());
+            $(".data").hide();
+            $("#" + $(this).val()).fadeIn(500)
+        }).change();
+    })
+</script>
 <?php include 'include/footer.php'; ?>
