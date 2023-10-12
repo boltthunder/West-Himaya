@@ -11,20 +11,31 @@ include 'include/navbar.php';
 </div>
 <div class="container py-5">
 
-    <div class="card mb-3">
-        <div class="card-body flex">
-            <div class="form-group border-2">
-                <img src="../image/himaya.png" style="width:200px">
+    <div class="grid sm:grid-cols-2 justify-center">
+
+        <div class="card mb-3 grid justify-center" style="width:18rem;margin-top:50px;">
+            <div class="form-group" style="z-index:1">
+                <img src="../image/person.png"
+                    style="width:200px; margin-top: -93px;border:1px solid black;border-radius:50%;">
+            </div>
+            <div class="card-body grid justify-center">
+                <div class="form-group">
+                    <h4>User name</h4>
+                    <h4>Birthdate</h4>
+                    <h4>Age</h4>
+                    <h4>Location</h4>
+                </div>
+            </div>
+            <div class="flex mb-2">
+                <div class="flex justify-between gap-3">
+                    <button class="btn btn-info">Edit Profile</button>
+                    <button class="btn btn-success">Create Post</button>
+                </div>
             </div>
 
-            <div class="form-group border-2">
-                <h4>User name</h4>
-                <h4>Birthdate</h4>
-                <h4>Age</h4>
-                <h4>Location</h4>
-            </div>
         </div>
     </div>
+
 
     <div class=" row flex justify-center gap-4">
 
