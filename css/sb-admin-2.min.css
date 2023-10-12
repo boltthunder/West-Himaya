@@ -11229,9 +11229,9 @@ a:focus {
 }
 
 .bg-login-image {
-    background: url('image/12.png');
+    background: url('../image/himaya.png');
     background-position: center;
-    background-size: cover
+    background-size: cover;
 }
 
 .bg-register-image {
