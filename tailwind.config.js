@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     important: true,
-    content: ["dist/*.{ html,js,php}", "index.php", "client/*/*.{php,js,html}", "user/*.{js,php,css~}", "./node_modules/flowbite/**/*.js"],
+    content: ["dist/*.{ html,js,php}", "index.php", "client/*/*.{php,js,html}", "user/*.{js,php,css~}", "node_modules/flowbite/*.js"],
     theme: {
         screens: {
             cp: "360px",

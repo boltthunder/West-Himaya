@@ -1,6 +1,6 @@
 <?php
-include 'include/autoload.php';
-
+// include 'include/autoload.php';
+session_start();
 unset($_SESSION['title']);
 $_SESSION['title'] = "HOME";
 
@@ -15,9 +15,73 @@ include 'include/navbar.php';
         <div class="card" style="width: 20rem;">
             <img src="../image/himaya.png" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                <h5 class="card-title mb-3">[user name]</h5>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-location-arrow mr-3"></i>
+                    <span>Location of Item</span>
+                </div>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>09123456789</span>
+                </div>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Category</span>
+
+                    <div class="card-text mt-1" style="margin-left: 12px">
+                        <i class="fa-regular fa-circle-dot ml-4"></i>
+                        <span>Barter</span>
+                    </div>
+                </div>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-peso-sign"></i>
+                    <span>100.00</span>
+                </div>
+
+
+                <a href="#" class="btn btn-primary flex justify-center" data-bs-toggle="modal" data-bs-target="#staticBackdrop">View More Details</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 20rem;">
+            <img src="../image/himaya.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">[user name]</h5>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-location-arrow mr-3"></i>
+                    <span>Location of Item</span>
+                </div>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>09123456789</span>
+                </div>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Category</span>
+
+                    <div class="card-text mt-1" style="margin-left: 12px">
+                        <i class="fa-regular fa-circle-dot ml-4"></i>
+                        <span>Rent</span>
+                    </div>
+                </div>
+
+                <div class="card-text mb-3">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>[FROM DATE] - [TO DATE]</span>
+                </div>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-peso-sign"></i>
+                    <span>100.00</span>
+                </div>
+
                 <a href="#" class="btn btn-primary flex justify-center">View More Details</a>
             </div>
         </div>
@@ -25,9 +89,31 @@ include 'include/navbar.php';
         <div class="card" style="width: 20rem;">
             <img src="../image/himaya.png" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                <h5 class="card-title">[user name]</h5>
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-location-arrow mr-3"></i>
+                    <span>Location of Item</span>
+                </div>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>09123456789</span>
+                </div>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Category</span>
+
+                    <div class="card-text mt-1" style="margin-left: 12px">
+                        <i class="fa-regular fa-circle-dot ml-4"></i>
+                        <span>Trade</span>
+                    </div>
+                </div>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-peso-sign"></i>
+                    <span>100.00</span>
+                </div>
                 <a href="#" class="btn btn-primary flex justify-center">View More Details</a>
             </div>
         </div>
@@ -35,9 +121,31 @@ include 'include/navbar.php';
         <div class="card" style="width: 20rem;">
             <img src="../image/himaya.png" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                <h5 class="card-title">[user name]</h5>
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-location-arrow mr-3"></i>
+                    <span>Location of Item</span>
+                </div>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>09123456789</span>
+                </div>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Category</span>
+
+                    <div class="card-text mt-1" style="margin-left: 12px">
+                        <i class="fa-regular fa-circle-dot ml-4"></i>
+                        <span>Barter</span>
+                    </div>
+                </div>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-peso-sign"></i>
+                    <span>100.00</span>
+                </div>
                 <a href="#" class="btn btn-primary flex justify-center">View More Details</a>
             </div>
         </div>
@@ -45,9 +153,31 @@ include 'include/navbar.php';
         <div class="card" style="width: 20rem;">
             <img src="../image/himaya.png" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                <h5 class="card-title">[user name]</h5>
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-location-arrow mr-3"></i>
+                    <span>Location of Item</span>
+                </div>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>09123456789</span>
+                </div>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Category</span>
+
+                    <div class="card-text mt-1" style="margin-left: 12px">
+                        <i class="fa-regular fa-circle-dot ml-4"></i>
+                        <span>Barter</span>
+                    </div>
+                </div>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-peso-sign"></i>
+                    <span>100.00</span>
+                </div>
                 <a href="#" class="btn btn-primary flex justify-center">View More Details</a>
             </div>
         </div>
@@ -55,9 +185,31 @@ include 'include/navbar.php';
         <div class="card" style="width: 20rem;">
             <img src="../image/himaya.png" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                <h5 class="card-title">[user name]</h5>
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-location-arrow mr-3"></i>
+                    <span>Location of Item</span>
+                </div>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>09123456789</span>
+                </div>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Category</span>
+
+                    <div class="card-text mt-1" style="margin-left: 12px">
+                        <i class="fa-regular fa-circle-dot ml-4"></i>
+                        <span>Barter</span>
+                    </div>
+                </div>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-peso-sign"></i>
+                    <span>100.00</span>
+                </div>
                 <a href="#" class="btn btn-primary flex justify-center">View More Details</a>
             </div>
         </div>
@@ -65,19 +217,31 @@ include 'include/navbar.php';
         <div class="card" style="width: 20rem;">
             <img src="../image/himaya.png" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary flex justify-center">View More Details</a>
-            </div>
-        </div>
+                <h5 class="card-title">[user name]</h5>
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-location-arrow mr-3"></i>
+                    <span>Location of Item</span>
+                </div>
 
-        <div class="card" style="width: 20rem;">
-            <img src="../image/himaya.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>09123456789</span>
+                </div>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Category</span>
+
+                    <div class="card-text mt-1" style="margin-left: 12px">
+                        <i class="fa-regular fa-circle-dot ml-4"></i>
+                        <span>Barter</span>
+                    </div>
+                </div>
+
+                <div class="card-text mb-3">
+                    <i class="fa-solid fa-peso-sign"></i>
+                    <span>100.00</span>
+                </div>
                 <a href="#" class="btn btn-primary flex justify-center">View More Details</a>
             </div>
         </div>
@@ -86,6 +250,7 @@ include 'include/navbar.php';
 </div>
 
 <div class="container py-5">
+
 
 </div>
 
@@ -105,5 +270,6 @@ include 'include/navbar.php';
 </div>
 
 <?php
+include '../include/modal/more.php';
 include 'include/footer.php';
 ?>
